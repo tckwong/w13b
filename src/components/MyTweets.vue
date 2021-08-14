@@ -1,10 +1,10 @@
 <template>
     <body>
         <div id="wrapper">
-            <h1 :id="colorChange">TWEET LIST</h1>
+            <h1>TWEET LIST</h1>
             <button @click="changeDisplay()">Toggle Layout</button>
             <div :class="{ gridContainer: isActive }">
-                <p class="tweetItem" v-for="i in allTweets" v-bind:key="i.id">{{ i.tweet }} &#128640;<br>{{ i.user}}<br>{{ i.dateCreated}}</p>
+                <p class="tweetItem" v-for="i in allTweets" v-bind:key="i.id">{{ i.tweet }} &#128640; <br> {{ i.user}} <br> {{ i.dateCreated}}</p>
             </div>
         </div>
     </body>
